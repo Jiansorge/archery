@@ -1,0 +1,304 @@
+* { box-sizing: border-box;}
+* { margin: 0; padding: 0; }
+
+html { 
+  font-size: 16px; 
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  width: 12%;
+  left: 4rem;
+  position: absolute;
+  top: 1.9rem;
+  border-radius:50%;
+  border: solid lightgreen 3px;
+}
+
+header {
+  height: 100%;
+  background-color: rgb(205, 222, 179);
+}
+
+.company {
+  width: 25rem;
+  margin-left:10rem;
+  text-align: center;
+}
+
+.contact {
+  display:inline-flex;
+  width: 14rem;
+  margin: 1rem 0 1rem 17.9vw;
+  text-align: right;
+  padding: 1rem 0 0 3rem;
+  background-color: rgb(236, 247, 208);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.title-text, nav, .mini-about {
+  display: inline-flex;
+}
+
+.menu {
+  background-color: rgb(137, 191, 75);
+  width: 100%;
+  text-align: right;
+  justify-content: center;
+}
+
+.link {
+  color: rgb(80, 62, 53);
+  padding: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(80, 62, 53);
+}
+
+a:hover {
+  color: blue;
+  border-style:ridge;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  transition: 0.1s;
+}
+
+.intro {
+  margin-top: 4rem;
+  margin-left: -1rem;
+}
+
+
+.intro h3 {
+  margin-top: 5vw;
+}
+
+.sub-title {
+  margin: auto;
+  text-align: center;
+  background-color: rgb(80, 62, 53);
+  border-radius: .6rem;
+  padding: .4rem;
+  width: 14rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+h4{
+  display:flex;
+  padding: 1rem;
+  width: 85%;
+  margin-left: 10%;
+}
+
+ h2{
+  color:rgb(131, 188, 49);
+}
+
+.highlight{
+  width: 50%;
+}
+
+.table {
+  margin: 3rem;
+  margin-bottom: 5rem;
+}
+
+.row{
+  width: 90%;
+  margin: auto;
+  background-color: rgb(236, 247, 220);
+  display: inline-flex;
+  margin-left: 5rem;
+  
+}
+
+.about .row {
+  background-color: white;
+  margin-left: 5rem;
+}
+
+.instructors .row {
+  background-color: rgb(236, 247, 208);
+}
+
+.instructor {
+  width: 100%;
+  height:auto;
+  border-radius: 50%;
+  border: solid 9px white;
+}
+
+.classes .col {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.col {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.col_1_of_4 {
+  width: 25%;
+  padding:1rem;
+}
+
+.col_1_of_3 {
+  width: 33.333333%;
+  margin-right: 2rem;
+}
+
+.col_1_of_3 p{
+  padding-bottom: 1rem;
+}
+
+[class*='col-'] {
+	float: left;
+  padding-right: $pad;
+  .grid &:last-of-type {
+  	padding-right: 0;
+  }
+}
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
+}
+
+.instructors {
+  background-color: rgb(236, 247, 208);
+}
+
+.instructors .sub-title {
+  position: relative;
+  top: 1rem;
+}
+
+h3{
+  padding-bottom: 1rem;
+  text-align: center
+}
+
+.nondiscriminatory {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(205, 222, 179);
+  margin-top: 2rem;
+  padding: 0.5rem;
+  display: inline-flex;
+  text-align: center;
+}
+
+footer nav {
+  text-align: center;
+  display:inline-flex;
+  margin:auto;
+}
+
+.fa-ul {
+  display:inline-flex
+  text-align: right;
+  margin:0 auto;
+  color: rgb(80, 62, 53);
+  
+}
+
+.fa-instagram {
+  margin-left: 4rem;
+}
+
+.fa-facebook {
+  margin-left: 8rem;
+}
+
+.fa:hover {
+  top: 1rem;
+  transition: all 0.5s ease 0s;
+}
+
+.copyright {
+  background-color: rgb(137, 191, 75);
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+  display: block;
+  margin: auto;
+  margin-top: 5vw;
+  margin-left: 6%;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 10s ease infinite;
+}
+
+.slide-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.number {
+  color: white;
+  position: absolute;
+  top: 16rem;
+  left: 6rem;
+}
+
+.slide img {
+  width: 40rem;
+  height: 30rem;
+}
+
+.slide img:hover {
+  width: 42rem;
+  height: 32rem;
+  border-style: double;
+  transition: all 1s ease 0s;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
